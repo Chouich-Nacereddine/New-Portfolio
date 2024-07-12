@@ -7,69 +7,30 @@ import { BiSolidBellRing } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <header className="text-white fixed bg-black bg-opacity-30 h-[10%] flex items-center px-8 w-full">
-        
-    
-      <div className="w-[33.33%] text-2xl">
-        <span className="text-4xl text-blue-600 font-bold tracking-wider">
-          A
-        </span>
-        uto
-        <span className="text-4xl text-blue-600 font-bold tracking-wider">
-          P
-        </span>
-        iece
-      </div>
+    <header className="text-black fixed bg-[#FFFFFF] h-[10%] flex items-center px-8 w-full overflow-hidden">
+      
+      <span className="w-[20%] text-3xl tracking-wide">
+        <span className="text-[#397DF0] text-5xl">N</span>acerddine
+      </span>
 
-      <div className="w-[33.33%] flex items-center justify-center gap-10">
-        <span>
-          <div className="flex justify-center items-center">
-            <Link
-              className="group text-xl flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r bg-transparent text-white font-semibold hover:translate-y-3 transition-all duration-500 hover:text-blue-600"
-              href="/"
-            >
-              <FaHome />
-              <span className="absolute opacity-0 text-md group-hover:opacity-100 group-hover:text-blue-600 group-hover:text-sm group-hover:-translate-y-5 duration-700">
-                Home
-              </span>
-            </Link>
-          </div>
-        </span>
-        <span>
-          <div className="flex justify-center items-center">
-            <Link
-              className="group text-xl flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r bg-transparent text-white font-semibold hover:translate-y-3 transition-all duration-500 hover:text-blue-600"
-              href="/"
-            >
-              <TbZoomExclamation />
-              <span className="absolute opacity-0 text-md group-hover:opacity-100 group-hover:text-blue-600 group-hover:text-sm group-hover:-translate-y-5 duration-700">
-                About
-              </span>
-            </Link>
-          </div>
-        </span>
-        <span>
-          <div className="flex justify-center items-center">
-            <Link
-              className="group text-xl flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r bg-transparent text-white font-semibold hover:translate-y-3 transition-all duration-500 hover:text-blue-600"
-              href="/"
-            >
-              <TbPlugConnected />
-              <span className="absolute opacity-0 text-md group-hover:opacity-100 group-hover:text-blue-600 group-hover:text-sm group-hover:-translate-y-5 duration-700">
-                Contact
-              </span>
-            </Link>
-          </div>
-        </span>
-      </div>
-      <div className="w-[33.33%] flex items-center justify-end">
-        <button class="Btn">
-          <div class="sign">
-            <BiSolidBellRing />
-          </div>
-          <div class="text">Get notified</div>
-        </button>
-      </div>
+      <span className="w-[60%] flex justify-center">
+        <ul className="flex items-center gap-8 justify-center pt-2">
+          <li className="font-mono cursor-pointer">Home</li>
+          <li className="font-mono cursor-pointer">About</li>
+          <li className="font-mono cursor-pointer">Skills</li>
+          <li className="font-mono cursor-pointer">Certifications</li>
+          <li className="font-mono cursor-pointer">Portfolio</li>
+          <li className="font-mono cursor-pointer">Experience</li>
+          <li className="font-mono cursor-pointer">Contact</li>
+        </ul>
+      </span>
+      
+      <span className="w-[20%] flex justify-end pt-1">
+        <div className="w-max bg-[#397DF0] flex items-center justify-center px-3 py-2 rounded-lg text-white tracking-widest text-xl">
+          Hire me
+        </div>
+      </span>
+      
     </header>
   );
 };

@@ -2,14 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "PoetsenOne";
+  src: url("/fonts/PoetsenOne-Regular.ttf") format("truetype");
+}
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: PoetsenOne;
 }
 
 body {
-  background-color: #1e1e1e;
+  background-color: #FFFFFF;
 }
 
 body::-webkit-scrollbar {
@@ -23,80 +30,9 @@ header::after {
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, blue);
+  background: linear-gradient(90deg, transparent, #397DF0);
   animation: moveLine 2.6s linear infinite;
 }
-
-.Btn {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 45px;
-  height: 45px;
-  border: none;
-  border-radius: 50%;
-  color: black;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition-duration: 0.3s;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  background-color: rgb(255, 65, 65);
-}
-
-/* plus sign */
-.sign {
-  width: 100%;
-  transition-duration: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* text */
-.text {
-  position: absolute;
-  right: 0%;
-  width: 0%;
-  opacity: 0;
-  color: black;
-  font-size: .8em;
-  font-weight: 600;
-  transition-duration: 0.3s;
-}
-/* hover effect on button width */
-.Btn:hover {
-  width: 150px;
-  border-radius: 40px;
-  transition-duration: 0.3s;
-}
-
-.Btn:hover .sign {
-  width: 30%;
-  transition-duration: 0.3s;
-  padding-left: 20px;
-}
-/* hover effect button's text */
-.Btn:hover .text {
-  opacity: 1;
-  width: 70%;
-  transition-duration: 0.3s;
-  padding-right: 10px;
-}
-/* button click effect*/
-.Btn:active {
-  transform: translate(2px, 2px);
-}
-
-.home-bg {
-  background-image: url(/image/depositphotos_31991827-stock-photo-high-detailed-3d-car-model.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 90%;
-}
-
-/* .my_img {
-  filter: drop-shadow(0 6mm 4mm blue);
-} */
 
 @keyframes moveLine {
   0% {
