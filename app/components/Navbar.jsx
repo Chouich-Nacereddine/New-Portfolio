@@ -7,7 +7,7 @@ import { BiSolidBellRing } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <header className="text-black fixed bg-[#FFFFFF] h-[10%] flex items-center px-8 w-full overflow-hidden">
+    <header className="text-black fixed bg-[#FFFFFF] h-[10%] flex items-center z-10 px-8 w-full overflow-hidden">
       
       <span className="w-[20%] text-3xl tracking-wide">
         <span className="text-[#397DF0] text-5xl">N</span>acerddine
@@ -26,7 +26,7 @@ const Navbar = () => {
       </span>
       
       <span className="w-[20%] flex justify-end pt-1">
-        <div className="w-max bg-[#397DF0] flex items-center justify-center px-3 py-2 rounded-lg text-white tracking-widest text-xl">
+        <div className="w-max bg-[#397DF0] flex items-center justify-center px-3 py-2 rounded-xl text-white tracking-widest text-xl">
           Hire me
         </div>
       </span>

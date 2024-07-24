@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   FaGithub,
   FaInstagram,
@@ -11,18 +11,34 @@ import {
 import { BsCamera2 } from "react-icons/bs";
 import { GiBoatFishing, GiBoxingGloveSurprise } from "react-icons/gi";
 import { TfiWrite } from "react-icons/tfi";
+import ScrollReveal from "scrollreveal";
+
 
 const About = () => {
   const [hover, setHover] = useState(null);
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "50px",
+      duration: 1000,
+      easing: "ease-in-out",
+      reset: true,
+    });
+
+    sr.reveal(".reveal-left", { origin: "left" });
+    sr.reveal(".reveal-right", { origin: "right" });
+    sr.reveal(".reveal-top", { origin: "top" });
+    sr.reveal(".reveal-bottom", { origin: "bottom" });
+    sr.reveal(".reveal-fade", { opacity: 0, distance: "0px" });
+  }, []);
   return (
     <section className="w-full h-[48vh] bg-[#D2E5FF]">
       <div className="w-full h-full bg-transparent flex flex-col">
-        <h1 className="flex self-center py-10 text-3xl tracking-wider">
+        <h1 className="flex self-center py-10 text-3xl tracking-wider reveal-top">
           About
         </h1>
 
         <div className="flex text-base">
-          <span className="w-[30%] flex flex-col px-10 items-center">
+          <span className="w-[30%] flex flex-col px-10 items-center reveal-left">
             <h2 className="text-[#397DF0] text-2xl pb-2">Hobbies</h2>
             <ul className="w-[60%] flex flex-col justify-center items-center px-16 gap-1">
               <li className="flex justify-center items-center gap-1">
@@ -43,8 +59,8 @@ const About = () => {
             </ul>
           </span>
 
-          <span className="h-[100%] w-[1px] border border-[#397DF0]"></span>
-          <span className="w-[40%] flex flex-col items-center px-10">
+          <span className="h-[100%] w-[1px] border border-[#397DF0] reveal-fade"></span>
+          <span className="w-[40%] flex flex-col items-center px-10 reveal-right">
             <p className="text-center">
               I am Nacereddine Chouich, a passionate Full Stack Developer,
               graduated in 2024 from ENSA of Fès, Morocco. I am a quick learner,
@@ -55,7 +71,7 @@ const About = () => {
               <div className="flex pt-10 gap-8">
                 <Link
                   href="https://www.instagram.com/nacer_edd/?igsh=ZHY2bnB1d2puMWMy&utm_source=qr"
-                  target="_blanc"
+                  target="_blank"
                 >
                   <span
                     className="p-2 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-white"
@@ -72,7 +88,7 @@ const About = () => {
                 </Link>
                 <Link
                   href="https://github.com/Chouich-Nacereddine"
-                  target="_blanc"
+                  target="_blank"
                 >
                   <span
                     className="p-2 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-white"
@@ -89,7 +105,7 @@ const About = () => {
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/nacreddine-chouich/"
-                  target="_blanc"
+                  target="_blank"
                 >
                   <span
                     className="p-2 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-white"
@@ -108,19 +124,25 @@ const About = () => {
             </div>
           </span>
 
-          <span className="h-[100%] w-[1px] border border-[#397DF0]"></span>
-          <span className="w-[30%] flex flex-col items-center px-10">
+          <span className="h-[100%] w-[1px] border border-[#397DF0] reveal-fade"></span>
+          <span className="w-[30%] flex flex-col items-center px-10 reveal-left">
             <span className="w-[30%] flex flex-col px-10 items-center">
-              {/* <h2 className="text-[#397DF0] text-2xl pb-4">Languages</h2> */}
               <ul className="w-[60%] flex flex-col justify-center items-center px-16 gap-1">
                 <li className="flex justify-center items-center gap-4">
-                  Arabic <img className='w-12' src="/image/100percent.png" alt="" />
+                  Arabic{" "}
+                  <img
+                    className="w-12"
+                    src="/image/100percent.png"
+                    alt="100%"
+                  />
                 </li>
                 <li className="flex justify-center items-center gap-4">
-                  French <img className='w-12' src="/image/75percent.png" alt="" />
+                  French{" "}
+                  <img className="w-12" src="/image/75percent.png" alt="75%" />
                 </li>
                 <li className="flex justify-center items-center gap-4">
-                  English <img className='w-12' src="/image/50percent.png" alt="" />
+                  English{" "}
+                  <img className="w-12" src="/image/50percent.png" alt="50%" />
                 </li>
               </ul>
             </span>
