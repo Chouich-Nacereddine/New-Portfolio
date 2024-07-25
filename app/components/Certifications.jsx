@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect } from "react";
 import MarqueeDemo from "./MarqueeDemo";
 import ScrollReveal from 'scrollreveal';
