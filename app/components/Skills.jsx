@@ -49,22 +49,22 @@ const Skills = () => {
     "stackoverflow",
     "eclipseide",
   ];
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const sr = ScrollReveal({
-        distance: "50px",
-        duration: 1000,
-        easing: "ease-in-out",
-        reset: true,
-      });
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const sr = ScrollReveal({
+  //       distance: "50px",
+  //       duration: 1000,
+  //       easing: "ease-in-out",
+  //       reset: true,
+  //     });
 
-      sr.reveal(".reveal-left", { origin: "left" });
-      sr.reveal(".reveal-right", { origin: "right" });
-      sr.reveal(".reveal-top", { origin: "top" });
-      sr.reveal(".reveal-bottom", { origin: "bottom" });
-      sr.reveal(".reveal-fade", { opacity: 0, distance: "0px" });
-    }
-  }, []);
+  //     sr.reveal(".reveal-left", { origin: "left" });
+  //     sr.reveal(".reveal-right", { origin: "right" });
+  //     sr.reveal(".reveal-top", { origin: "top" });
+  //     sr.reveal(".reveal-bottom", { origin: "bottom" });
+  //     sr.reveal(".reveal-fade", { opacity: 0, distance: "0px" });
+  //   }
+  // }, []);
   return (
     <div className="min-h-max w-full skills_bg">
       <div className="flex bg-white px-8 py-14 bg-opacity-20">

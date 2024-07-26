@@ -4,21 +4,21 @@ import React, { useEffect } from "react";
 import MarqueeDemo from "./MarqueeDemo";
 
 const Certifications = () => {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      import("scrollreveal").then(({ default: ScrollReveal }) => {
-        const sr = ScrollReveal({
-          distance: "50px",
-          duration: 1000,
-          easing: "ease-in-out",
-          reset: true,
-        });
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     import("scrollreveal").then(({ default: ScrollReveal }) => {
+  //       const sr = ScrollReveal({
+  //         distance: "50px",
+  //         duration: 1000,
+  //         easing: "ease-in-out",
+  //         reset: true,
+  //       });
 
-        sr.reveal(".reveal-top", { origin: "top" });
-        sr.reveal(".reveal-bottom", { origin: "bottom" });
-      });
-    }
-  }, []);
+  //       sr.reveal(".reveal-top", { origin: "top" });
+  //       sr.reveal(".reveal-bottom", { origin: "bottom" });
+  //     });
+  //   }
+  // }, []);
 
   return (
     <section className="w-full overflow-hidden px-8">
