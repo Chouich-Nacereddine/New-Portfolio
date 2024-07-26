@@ -6,21 +6,23 @@ import ScrollReveal from "scrollreveal";
 
 const Home = () => {
   useEffect(() => {
-    // Initialize ScrollReveal and define the animation properties
-    const sr = ScrollReveal({
-      delay: 200,
-      duration: 1000,
-      distance: "50px",
-      easing: "ease-in-out",
-      reset: true, // animations reset every time they come into view
-    });
+    if (typeof window !== "undefined") {
+      // Initialize ScrollReveal and define the animation properties
+      const sr = ScrollReveal({
+        delay: 200,
+        duration: 1000,
+        distance: "50px",
+        easing: "ease-in-out",
+        reset: true, // animations reset every time they come into view
+      });
 
-    // Specific animation settings for different elements
-    sr.reveal(".reveal-right", { origin: "right" });
-    sr.reveal(".reveal-left", { origin: "left" });
-    sr.reveal(".reveal-top", { origin: "top" });
-    sr.reveal(".reveal-bottom", { origin: "bottom" });
-    sr.reveal(".reveal-fade", { opacity: 0, distance: "0px" });
+      // Specific animation settings for different elements
+      sr.reveal(".reveal-right", { origin: "right" });
+      sr.reveal(".reveal-left", { origin: "left" });
+      sr.reveal(".reveal-top", { origin: "top" });
+      sr.reveal(".reveal-bottom", { origin: "bottom" });
+      sr.reveal(".reveal-fade", { opacity: 0, distance: "0px" });
+    }
   }, []);
 
   return (
