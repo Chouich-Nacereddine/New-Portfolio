@@ -62,20 +62,20 @@ const ReviewCard = ({ img }) => {
 };
 
 export default function MarqueeDemo() {
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     import('scrollreveal').then(({ default: ScrollReveal }) => {
-  //       const sr = ScrollReveal({
-  //         distance: '50px',
-  //         duration: 1000,
-  //         easing: 'ease-in-out',
-  //         reset: true,
-  //       });
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('scrollreveal').then(({ default: ScrollReveal }) => {
+        const sr = ScrollReveal({
+          distance: '50px',
+          duration: 1000,
+          easing: 'ease-in-out',
+          reset: true,
+        });
 
-  //       sr.reveal('.reveal-bottom', { origin: 'bottom' });
-  //     });
-  //   }
-  // }, []);
+        sr.reveal('.reveal-bottom', { origin: 'bottom' });
+      });
+    }
+  }, []);
   return (
     <div className="relative flex h-max w-full flex-col items-center justify-center overflow-hidden rounded-lg border py-2 bg-background ">
       <Marquee pauseOnHover className="[--duration:30s]">

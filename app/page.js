@@ -1,22 +1,23 @@
-"use client"
+import dynamic from "next/dynamic";
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Socials from "./components/Socials";
-import Skills from "./components/Skills";
-import Certifications from "./components/Certifications";
+const Home = dynamic(() => import("./components/Home"), { ssr: false });
+const About = dynamic(() => import("./components/About"), { ssr: false });
+const Contact = dynamic(() => import("./components/Contact"), { ssr: false });
+const Socials = dynamic(() => import("./components/Socials"), { ssr: false });
+const Skills = dynamic(() => import("./components/Skills"), { ssr: false });
+const Certifications = dynamic(() => import("./components/Certifications"), {
+  ssr: false,
+});
 import "./Socials.css";
-
 
 export default function App() {
   return (
     <main className="w-[100vw] min-h-screen overflow-hidden pt-[5.3%]">
-      <Socials/>
+      <Socials />
       <Home />
       <About />
-      <Skills/>
-      <Certifications/>
+      <Skills />
+      <Certifications />
       <Contact />
     </main>
   );
