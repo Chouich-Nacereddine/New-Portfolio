@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
+// import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
 
 const reviews = [
   {
@@ -45,12 +45,13 @@ const reviews = [
 ];
 
 const firstRow = reviews.slice(0, reviews.length);
+// const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({ img }) => {
   return (
     <figure
       className={cn(
-        "relative w-max h-max cursor-pointer overflow-hidden rounded-xl reveal-bottom"
+        "relative w-max h-max cursor-pointer overflow-hidden rounded-xl "
       )}
     >
       <div className="flex items-center justify-center gap-2">
@@ -62,18 +63,19 @@ const ReviewCard = ({ img }) => {
 
 export default function MarqueeDemo() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const sr = ScrollReveal({
-        distance: "50px",
-        duration: 1000,
-        easing: "ease-in-out",
-        reset: true,
-      });
+    if (typeof window !== 'undefined') {
+      import('scrollreveal').then(({ default: ScrollReveal }) => {
+        const sr = ScrollReveal({
+          distance: '50px',
+          duration: 1000,
+          easing: 'ease-in-out',
+          reset: true,
+        });
 
-      sr.reveal(".reveal-bottom", { origin: "bottom" });
+        sr.reveal('.reveal-bottom', { origin: 'bottom' });
+      });
     }
   }, []);
-
   return (
     <div className="relative flex h-max w-full flex-col items-center justify-center overflow-hidden rounded-lg border py-2 bg-background ">
       <Marquee pauseOnHover className="[--duration:30s]">
