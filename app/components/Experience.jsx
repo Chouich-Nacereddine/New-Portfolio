@@ -88,7 +88,7 @@ const Experience = () => {
 
   return (
     <section className="min-h-max flex px-8 overflow-hidden w-full flex-col my-16">
-      <h1 className="text-[#397DF0] text-3xl pb-10 text-center reveal-top">
+      <h1 className="text-[#397DF0] tracking-wider text-3xl pb-10 text-center reveal-top">
         Experience
       </h1>
       <div className="space-y-14 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-[#397DF0] before:to-transparent">
