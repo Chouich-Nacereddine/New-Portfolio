@@ -1,16 +1,20 @@
 import { cn } from "@/lib/utils";
 
 export default function RetroGrid({
-  className
+  className,
+  angle = 65
 }) {
   return (
     (<div
       className={cn(
-        "pointer-events-none absolute h-full w-full overflow-hidden opacity-50 [perspective:200px]",
+        "pointer-events-none absolute size-full overflow-hidden opacity-50 [perspective:200px]",
         className
-      )}>
+      )}
+      style={{
+        "--grid-angle": `${angle}deg`
+      }}>
       {/* Grid */}
-      <div className="absolute inset-0 [transform:rotateX(35deg)]">
+      <div className="absolute inset-0 [transform:rotateX(var(--grid-angle))]">
         <div
           className={cn(
             "animate-grid",

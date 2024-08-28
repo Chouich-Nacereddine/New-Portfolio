@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
-import AnimatedGridPattern from "@/components/magicui/grid-pattern";
- 
+import RetroGrid from "@/components/magicui/retro-grid";
+
 import Link from "next/link";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
@@ -68,10 +68,15 @@ const Home = () => {
 
       {/* Mobile */}
       <div className="md:hidden h-screen w-full flex flex-col items-center  overflow-x-hidden text-2xl">
-        
-        <img src="/image/phone-me.png" alt="" className="rounded-full h-[50vh] "/>
+        <img
+          src="/image/phone-me.png"
+          alt=""
+          className="rounded-full h-[50vh] "
+        />
         <h1 className="flex tracking-wider text-base ">
-          <span className="reveal-top font-mono font-semibold">Welcome to my Portfolio</span>
+          <span className="reveal-top font-mono font-semibold">
+            Welcome to my Portfolio
+          </span>
         </h1>
         <h1 className="tracking-wider pt-4 pb-2">
           <span className="reveal-top">Hi, I'm</span>
@@ -85,17 +90,8 @@ const Home = () => {
         <h1 className="racking-wider ">
           <span className="text-[#397DF0] reveal-top">Engineer</span>
         </h1>
-        <AnimatedGridPattern
-        numSquares={30}
-        maxOpacity={0.1}
-        duration={3}
-        repeatDelay={1}
-        className={cn(
-          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
-        )}
-      />
 
+        <RetroGrid />
       </div>
     </section>
   );
