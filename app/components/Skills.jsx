@@ -66,7 +66,7 @@ const Skills = () => {
     }
   }, []);
   return (
-    <div className="min-h-max w-full skills_bg">
+    <section className="min-h-max w-full skills_bg" id='skills'>
       <div className="flex bg-white px-8 py-14 bg-opacity-20">
         <div className="w-[50%] flex flex-col justify-center px-10 reveal-left">
           <h1 className="text-[#397DF0] text-3xl pb-6 pt-10 reveal-top">My Skills!</h1>
@@ -85,7 +85,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

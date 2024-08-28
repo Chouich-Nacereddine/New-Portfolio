@@ -57,7 +57,7 @@ const Home = () => {
         </p>
 
         <Link className="pt-6 reveal-bottom" href={"/"}>
-          <div className="w-max bg-[#397DF0] flex items-center justify-center px-3 py-2 rounded-xl text-white tracking-widest text-xl">
+          <div className="w-max bg-[#397DF0] flex items-center justify-center px-3 py-2 rounded-xl text-white tracking-widest text-xl hover:text-[#D2E5FF] hover:scale-90 transition-[.3s]">
             Hire me
           </div>
         </Link>

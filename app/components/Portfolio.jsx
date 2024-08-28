@@ -2,7 +2,7 @@ import Projects from "../data/Projects.js";
 import "../Portfolio.css";
 const Portfolio = () => {
   return (
-    <section className="min-h-max flex px-20 py-10overflow-hidden w-full flex-col my-20">
+    <section className="min-h-max flex px-20 py-10overflow-hidden w-full flex-col my-20" id='portfolio'>
       <h1 className="text-[#397DF0] tracking-wider text-3xl pb-10 text-center reveal-top">
         Portfolio
       </h1>

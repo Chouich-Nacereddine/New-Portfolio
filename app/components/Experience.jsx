@@ -87,7 +87,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section className="min-h-max flex px-8 overflow-hidden w-full flex-col my-16">
+    <section className="min-h-max flex px-8 overflow-hidden w-full flex-col my-16" id='experience'>
       <h1 className="text-[#397DF0] tracking-wider text-3xl pb-10 text-center reveal-top">
         Experience
       </h1>

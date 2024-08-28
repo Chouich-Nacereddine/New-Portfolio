@@ -4,7 +4,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="min-h-max w-full overflow-hidden px-8 mt-6">
+    <section className="min-h-max w-full overflow-hidden px-8 mt-6" id='contact'>
       <div className="w-full h-max overflow-hidden flex items-center">
         <span className="w-[50%]">
           <img className="w-[85%]" src="/image/contact.jpg" />
