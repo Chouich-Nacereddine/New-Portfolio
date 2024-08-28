@@ -25,7 +25,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="h-screen md:min-h-max flex px-8 overflow-hidden w-full">
+    <section className="h-screen md:min-h-max flex md:px-8 overflow-hidden w-full">
       {/* Desktop  */}
       <span className="w-[50%] overflow-hidden reveal-left md:block hidden">
         <div className="relative w-full ">
@@ -65,7 +65,7 @@ const Home = () => {
       </span>
 
       {/* Mobile */}
-      <div className="md:hidden h-screen w-full flex flex-col items-center  overflow-x-hidden text-3xl">
+      <div className="md:hidden h-screen w-full flex flex-col items-center  overflow-x-hidden text-2xl">
         
         <img src="/image/phone-me.png" alt="" className="rounded-full h-[50vh] "/>
         <h1 className="flex tracking-wider text-base ">
