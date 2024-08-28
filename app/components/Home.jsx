@@ -1,5 +1,7 @@
 "use client";
-
+import { cn } from "@/lib/utils";
+import AnimatedGridPattern from "@/components/magicui/grid-pattern";
+ 
 import Link from "next/link";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
@@ -25,17 +27,17 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="h-screen md:min-h-max flex md:px-8 overflow-hidden w-full">
+    <section className="h-screen p-0 md:min-h-max flex md:px-8 overflow-hidden w-full">
       {/* Desktop  */}
       <span className="w-[50%] overflow-hidden reveal-left md:block hidden">
-        <div className="relative w-full ">
+        <div className="relative w-full">
           <img
             className="absolute -z-30 reveal-fade"
             src="/image/home-bg-1.png"
             alt="Background"
           />
         </div>
-        <img className="reveal-left" src="/image/me.png" alt="Me" />
+        <img className="reveal-left h-full" src="/image/me.png" alt="Me" />
       </span>
 
       <span className="hidden w-[50%] md:flex flex-col justify-center px-2 text-4xl text-justify overflow-hidden gap-2">
@@ -83,7 +85,17 @@ const Home = () => {
         <h1 className="racking-wider ">
           <span className="text-[#397DF0] reveal-top">Engineer</span>
         </h1>
- 
+        <AnimatedGridPattern
+        numSquares={30}
+        maxOpacity={0.1}
+        duration={3}
+        repeatDelay={1}
+        className={cn(
+          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+        )}
+      />
+
       </div>
     </section>
   );
