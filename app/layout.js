@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     // Simulate loading time or wait until the app is fully loaded
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // Adjust this duration as needed
+    }, 2000); // Adjust this duration 
 
     return () => clearTimeout(timer);
   }, []);
