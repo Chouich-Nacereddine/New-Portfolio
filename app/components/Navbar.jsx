@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+// import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [selectedBTN, setselectedBTN] = useState("home");
@@ -13,20 +13,20 @@ const Navbar = () => {
   };
 
   return (
-    <header className="text-black fixed bg-[#FFFFFF] h-[10%] flex items-center z-10 px-8 w-full overflow-hidden">
-      <Link className="text-3xl tracking-wide" href="/" onClick={() => setselectedBTN("home")}>
+    <header className="hidden md:flex text-black fixed bg-[#FFFFFF] min-h-[10%] max-h-max  items-center z-10 px-8 w-full justify-center overflow-hidden flex-wrap">
+      <Link className="w-full text-center text-3xl tracking-wide md:w-max" href="/" onClick={() => setselectedBTN("home")}>
         <span className="text-[#397DF0] text-5xl">N</span>acerddine
       </Link>
 
       {/* Mobile Menu Icon */}
-      <span className="ml-auto z-30 md:hidden">
+      {/* <span className="ml-auto z-30 md:hidden">
         <button onClick={toggleMenu} className="text-3xl">
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
-      </span>
+      </span> */}
 
       {/* Desktop Menu */}
-      <span className="hidden md:flex justify-center flex-grow">
+      <span className="hidden md:flex justify-center flex-grow ">
         <ul className="flex items-center gap-8 justify-center pt-2">
           <Link href="/" onClick={() => setselectedBTN("home")}>
             <li className={`font-mono cursor-pointer hover:text-[#397DF0] transition-[.3s] ${selectedBTN === "home" ? "text-[#397DF0] font-semibold" : ""}`}>Home</li>
@@ -53,14 +53,23 @@ const Navbar = () => {
       </span>
 
       {/* Hire Me Button */}
-      <span className="hidden md:flex justify-end pt-1">
+      <Link className="hidden md:flex justify-end pt-1" href='#contact'>
         <div className="w-max bg-[#397DF0] flex items-center justify-center px-3 py-2 rounded-xl text-white tracking-widest text-xl hover:text-[#D2E5FF] hover:scale-90 transition-[.3s]">
           Hire me
         </div>
-      </span>
+      </Link>
+
+      {/* Mobile */}
+      <div className="fixedw-full h-[10vh] block bg-[#397DF0] md:hidden">epcep,</div>
+
+
+
+
+
+
 
       {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <div className="fixed top-[10%] left-0 w-full h-full z-20 flex">
           <div className={`bg-[#397DF0] w-1/2 min-w-max p-6 transform transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
             <ul className="flex flex-col items-start gap-8">
@@ -88,7 +97,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      )}
+      )} */}
     </header>
   );
 };
