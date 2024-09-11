@@ -67,28 +67,28 @@ const Home = () => {
       </span>
 
       {/* Mobile */}
-      <div className="md:hidden h-screen w-full flex flex-col items-center  overflow-x-hidden text-2xl">
+      <div className="md:hidden h-screen w-full flex flex-col items-center  overflow-x-hidden text-2xl ">
         <img
           src="/image/phone-me.png"
           alt=""
-          className="rounded-full h-[50vh] "
+          className="rounded-full h-[50vh]"
         />
         <h1 className="flex tracking-wider text-base ">
-          <span className="reveal-top font-mono font-semibold">
+          <span className="reveal-top font-mono font-semibold ">
             Welcome to my Portfolio
           </span>
         </h1>
-        <h1 className="tracking-wider pt-4 pb-2">
+        <h1 className="tracking-wider pt-4 pb-2 reveal-bottom">
           <span className="reveal-top">Hi, I'm</span>
         </h1>
-        <h1 className="tracking-widest reveal-bottom pb-2">
+        <h1 className="tracking-widest reveal-bottom pb-2 reveal-bottom">
           <span className="text-[#397DF0] ">Nacereddine Chouich</span>
         </h1>
-        <h1 className="flex tracking-wider pb-2">
-          <span className="reveal-top">Full Stack</span>
+        <h1 className="flex tracking-wider pb-2 reveal-bottom">
+          <span className="reveal-bottom">Full Stack</span>
         </h1>
         <h1 className="racking-wider ">
-          <span className="text-[#397DF0] reveal-top">Engineer</span>
+          <span className="text-[#397DF0] reveal-bottom">Engineer</span>
         </h1>
 
         <RetroGrid />
