@@ -32,8 +32,8 @@ const About = () => {
     }
   }, []);
   return (
-    <section className="w-full h-[48vh] bg-[#D2E5FF]" id='about'>
-      <div className="w-full h-full bg-transparent flex flex-col">
+    <section className="w-full md:h-[48vh] h-[30vh] bg-[#D2E5FF]" id='about'>
+      <div className="w-full h-full bg-transparent md:flex md:flex-col hidden">
         <h1 className="flex self-center py-10 text-3xl tracking-wider reveal-top">
           About
         </h1>
