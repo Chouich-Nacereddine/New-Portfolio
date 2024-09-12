@@ -55,7 +55,7 @@ const ReviewCard = ({ img }) => {
       )}
     >
       <div className="flex items-center justify-center gap-2">
-        <img className="w-[20vw]" alt="" src={img} />
+        <img className="md:w-[20vw] w-[40vw]" alt="" src={img} />
       </div>
     </figure>
   );

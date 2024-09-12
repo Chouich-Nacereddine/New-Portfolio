@@ -67,7 +67,7 @@ const Skills = () => {
   }, []);
   return (
     <section className="min-h-max w-full skills_bg" id='skills'>
-      <div className="md:flex flex-col bg-white md:px-8 p-0 md:py-14 bg-opacity-20">
+      <div className="md:flex-row flex flex-col bg-white md:px-8 p-0 md:py-14 bg-opacity-20">
         <div className="w-[50%] md:flex flex-col justify-center px-10 reveal-left hidden ">
           <h1 className="text-[#397DF0] text-3xl pb-6 pt-10 reveal-top">My Skills!</h1>
           <p className="font-mono text-justify border-r-2 border-b-2 pr-10 pb-6 rounded-br-3xl border-[#397DF0] reveal-bottom ">
@@ -78,9 +78,11 @@ const Skills = () => {
             skills to create robust and innovative solutions.
           </p>
         </div>
-        <h1 className="md:hidden tracking-wider text-base flex justify-center mt-5">
-          <span className="reveal-top font-mono font-semibold ">
-            Welcome to my Portfolio
+        <h1 className="md:hidden tracking-wider text-base flex justify-center mt-10">
+          <span className="reveal-top font-mono font-semibold text-center">
+          Explore a diverse range of <br />
+            languages, tools, and frameworks <br /> that reflect my proficiency and
+            experience.
           </span>
         </h1>
         <div className="md:w-[50%] w-full flex justify-center items-center reveal-right">
