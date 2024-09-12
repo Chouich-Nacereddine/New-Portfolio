@@ -39,7 +39,9 @@ const Socials = () => {
           >
             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path>
           </svg> */}
-            <FaLinkedinIn />
+            <Link href="https://www.linkedin.com/in/nacreddine-chouich/">
+              <FaLinkedinIn />
+            </Link>
           </span>
           <span className="tooltip2">
             {/* <svg
@@ -51,7 +53,9 @@ const Socials = () => {
           >
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
           </svg> */}
-            <FaGithub />
+            <Link href="https://github.com/Chouich-Nacereddine" target="_blank">
+              <FaGithub />
+            </Link>
           </span>
           <span className="tooltip3">
             <svg
@@ -130,14 +134,16 @@ const Socials = () => {
       <div className="md:hidden fixed z-50 w-[80vw] h-14 max-w-lg -translate-x-1/2 bg-white border border-gray-200 rounded-full bottom-2 left-1/2 ">
         <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
           <Link
-          href=""
+            target="_blank"
+            href="https://github.com/Chouich-Nacereddine"
             className="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50  group"
           >
-            <FaGithub className="w-6 h-6 mb-1 text-black  group-hover:text-[#397DF0] " />
+            <FaGithub className="w-6 h-6 mb-1 text-black  group-hover:text-[#397DF0]" />
           </Link>
 
           <Link
-          href=""
+            target="_blank"
+            href=""
             className="inline-flex flex-col items-center justify-center px-5  hover:bg-gray-50 group"
           >
             <FaDiscord className="w-6 h-6 mb-1 text-[#397DF0]  group-hover:text-[#397DF0]" />
@@ -145,9 +151,8 @@ const Socials = () => {
 
           <div className="flex items-center justify-center">
             <Link
-
-href=""
-
+              target="_blank"
+              href="https://www.linkedin.com/in/nacreddine-chouich/"
               className="inline-flex items-center justify-center w-10 h-10  bg-blue-600 rounded-full hover:bg-blue-700 group focus:ring-4 focus:ring-blue-300 focus:outline-none :focus:ring-blue-800"
             >
               <FaLinkedinIn className="w-4 h-4 text-white" />
@@ -155,14 +160,16 @@ href=""
           </div>
 
           <Link
-          href=""
+            target="_blank"
+            href="https://www.instagram.com/nacer_edd/"
             className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 group"
           >
             <FaSquareInstagram className="w-6 h-6 mb-1 text-red-500 group-hover:text-blue-600 " />
           </Link>
 
           <Link
-          href=""
+            target="_blank"
+            href="https://wa.me/212693901260"
             className="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 group"
           >
             <FaWhatsapp className="w-6 h-6 mb-1 text-green-500 group-hover:text-blue-600 " />
